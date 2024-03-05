@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articolo in vendita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .article-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-image {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+        .article-details {
+            flex-grow: 1;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="article-container">
+    <div class="article-details">
+        <h1>Nome dell'articolo</h1>
+        <p>Descrizione dell'articolo.</p>
+        <p>Prezzo: €99.99</p>
+    </div>
+    <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
+</div>
+
+<div class="article-container">
+    <div class="article-details">
+        <h1>Nome dell'articolo</h1>
+        <p>Descrizione dell'articolo.</p>
+        <p>Prezzo: €99.99</p>
+    </div>
+    <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
+</div>
+
+<button onclick="prenotaArticolo()">Prenota ora</button>
+
+<script>
+    function prenotaArticolo() {
+        alert('Articolo prenotato con successo!');
+        // Qui puoi aggiungere ulteriori azioni come inviare una richiesta al tuo server per registrare la prenotazione.
+    }
+</script>
+
+</body>
+</html>
