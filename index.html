@@ -16,18 +16,18 @@
             margin-bottom: 20px;
         }
         .article-container {
-            width: 30%; /* Imposta la larghezza in modo che tre blocchi siano sulla stessa riga */
+            width: 30%;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column; /* Cambiato da "row" a "column" */
+            align-items: center; /* Allinea al centro verticale */
             margin-bottom: 20px;
         }
         .article-image {
             max-width: 100%;
-            margin-right: 20px;
+            margin-bottom: 10px; /* Aggiunto margine inferiore */
         }
         .article-details {
-            flex-grow: 1;
+            text-align: center; /* Allinea il testo al centro */
         }
         button {
             padding: 10px;
@@ -40,31 +40,27 @@
 
 <div class="product-row">
     <div class="article-container">
+        <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
         <div class="article-details">
             <h1>Nome dell'articolo</h1>
             <p>Descrizione dell'articolo.</p>
             <p>Prezzo: €99.99</p>
         </div>
-        <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
     </div>
 
-    <div class="article-container">
-        <div class="article-details">
-            <h1>Nome dell'articolo</h1>
-            <p>Descrizione dell'articolo.</p>
-            <p>Prezzo: €99.99</p>
-        </div>
-        <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
-    </div>
+    <!-- Ripeti il blocco seguente per gli altri articoli -->
 
     <div class="article-container">
+        <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
         <div class="article-details">
             <h1>Nome dell'articolo</h1>
             <p>Descrizione dell'articolo.</p>
             <p>Prezzo: €99.99</p>
         </div>
-        <img class="article-image" src="immagine.jpg" alt="Immagine dell'articolo">
     </div>
+
+    <!-- Aggiungi altri blocchi qui -->
+
 </div>
 
 <button onclick="prenotaArticolo()">Prenota ora</button>
